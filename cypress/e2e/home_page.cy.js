@@ -14,7 +14,7 @@ before(() => {
 });
 it("should wait for JSON file data", () => {
   function getData() {
-    return cy.request("GET", "http://localhost:8081/get-data");
+    return cy.request("GET", "http://ec2-13-49-77-105.eu-north-1.compute.amazonaws.com:8081/get-data");
   }
   function getOutputeData() {
     getData().then((response) => {
